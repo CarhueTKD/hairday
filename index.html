@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>H A I R D A Y</title>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img src="img/Artboard 23.png" alt="" class="logo">
+        </div>
+        <div>
+            <ul class="nav-bar">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#aboutus" class="nav-link">About us</a></li>
+                <li class="nav-item"><a href="#staff" class="nav-link">Staff</a></li>
+                <li class="nav-item"><a href="#booking" class="nav-link">Booking</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div id="home">
+            <div>
+                <img src="img/Artboard 1.png" alt="" class="logoHome">
+                <p>Hair Day is a boutique hair salon that specializes in cut, color and styling makeup and nail services.</p>
+                <a href="#booking" class="btn">BOOK ONLINE</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="aboutus">
+            <div>
+                <img src="img/store/store03.png" alt="" class="img1">
+            </div>
+            <div class="textbox textabout">
+                <h1>About us</h1>
+                <p>Based in Madison, Wisconsin, Hair Day is a boutique hair salon that specializes in cut, color and styling. Hair Day also offers makeup and nail services, prides itself on its warm and relaxing atmosphere and is best known for edgy hair
+                    colors and on-trend cuts. The salon can only accommodate a small number of coloring appointments each week, so clients need to book far in advance. To keep clients inspired between appointments, the employees share makeup and nail
+                    tutorials on the Hair Day website.</p>
+            </div>
+            <div class="textbox textcto">
+                <h1>Pria Owner</h1>
+                <p>Pria, the owner of Hair Day, earned her certificate as a colorist and immediately started specializing in edgy, custom coloring techniques. She wanted to create a "treat yourself" environment for her clients. Pria opened the salon with
+                    her good friend and talented hairdresser, Garry.</p>
+            </div>
+            <div class="img2">
+                <img src="img/staff/colorists01a.png" alt="">
+            </div>
+        </div>
+        <div id="staff">
+            <div class="textbox">
+                <div>
+                    <img src="img/Artboard 22.png" alt="">
+                    <h1>STAFF</h1>
+                </div>
+                <div class="container">
+                    <div class="row row-3">
+                        <div>
+                            <img src="img/staff/colorists01.png" alt="" class="staffph">
+                            <p>Pria <b>|</b> Coloring</p>
+                            <a href="#aboutus">about me</a><b> |</b> <a href="#booking" value="Pria">book with me</a>
+                        </div>
+                        <div> <img src="img/staff/colorists02.png" alt="" class="staffph">
+                            <p>Juno <b>|</b> Coloring</p>
+                            <a href="#aboutus">about me </a><b>|</b> <a href="#booking" value="Juno">book with me</a>
+                        </div>
+                        <div><img src="img/staff/colorists03.png" alt="" class="staffph">
+                            <p>Luna <b>|</b> Coloring</p>
+                            <a href="#aboutus">about me </a><b>|</b> <a href="#booking" value="Luna">book with me</a>
+                        </div>
+                    </div>
+                    <div class="row row-2">
+                        <div>
+                            <img src="img/staff/stylists01.png" alt="" class="staffph">
+                            <p>Nicolle <b>|</b> Stylists</p>
+                            <a href="#aboutus">about me </a><b>|</b> <a href="#booking" value="Nicolle">book with me</a>
+                        </div>
+                        <div>
+                            <img src="img/staff/stylists02.png" alt="" class="staffph">
+                            <p>Gary <b>|</b> Stylists</p>
+                            <a href="#aboutus">about me </a><b>|</b> <a href="#booking" value="Gary">book with me</a>
+                        </div>
+                    </div>
+                    <div class="row row-2">
+                        <div>
+                            <img src="img/staff/makeup01.png" alt="" class="staffph">
+                            <p>Carol <b>|</b> Make-up</p>
+                            <a href="#aboutus">about me </a><b>|</b> <a href="#booking" value="Carol">book with me</a>
+                        </div>
+                        <div>
+                            <img src="img/staff/manicurist01.png" alt="" class="staffph">
+                            <p>Kim <b>|</b> Manicurist</p>
+                            <a href="#aboutus">about me </a><b>|</b> <a href="#booking" value="Kim">book with me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="booking">
+            <div>
+                <img src="img/store/store04.png" alt="">
+            </div>
+            <div>
+                <form method="POST">
+                    <h1>Booking</h1>
+                    <div class="boxbkg">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="boxbkg">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" pattern=”^(?:0|\+?44)(?:\d\s?){9,10}$”>
+                    </div>
+                    <div class="boxbkg">
+                        <label for="email">Email:</label>
+                        <input type="email" id="user_email" name="user_email">
+                    </div>
+                    <div class="boxbkg">
+                        <label for="booking_date">Boooking date:</label>
+                        <input type="datetime-local" id="booking_date" name="booking_date">
+                    </div>
+                    <div class="boxbkg">
+                        <label for="specialist">Specialist:</label>
+                        <input id="specialist" name="specialist" list="specialists">
+                        <datalist id="specialists">
+                            <option value="Pria">Pria</option>
+                            <option value="Juno">Juno</option>
+                            <option value="Luna">Luna</option>
+                            <option value="Nicolle">Nicolle</option>
+                            <option value="Chris">Gary</option>
+                            <option value="Carol">Carol</option>
+                            <option value="Kim">Kim</option>
+                        </datalist>
+                    </div>
+                    <div class="boxbkg">
+                        <label for="service">Service:</label>
+                        <input id="service" name="service" list="services">
+                        <datalist id="services">
+                            <option value="stylist">stylist</option>
+                            <option value="colorist">colorist</option>
+                            <option value="makeup">makeup</option>
+                            <option value="manicurist">manicurist</option>
+                        </datalist>
+                    </div>
+                    <div class="btn-con">
+                        <a href="#booking" class="btn">BOOK ONLINE</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+            <h1>Solcial</h1>
+            <p>Follow us on our social networks where you can discover more of our work and where we continually share beauty tutorials</p>
+            <div class="socialbox">
+                <a href="https://tiktok.com/"><img src="img/social/tik-tok.png"></a>
+                <a href="https://instagram.com/"> <img src="img/social/instagram.png"></a>
+                <a href="https://youtube.com/"><img src="img/social/youtube.png"></a>
+                <a href="https://twitter.com/"><img src="img/social/gorjeo.png"></a>
+            </div>
+        </div>
+        <div class="msg">
+            <form method="POST">
+                <h1>Contact us</h1>
+                <p></p>
+                <div class="boxbkg">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="boxbkg">
+                    <label for="email">Email:</label>
+                    <input type="email" id="user_email" name="user_email">
+                </div>
+                <div class="boxbkg">
+                    <label for="phone">Message:</label>
+                    <textarea id="m" name="message" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="btn-con">
+                    <a href="#booking" class="btn">send</a>
+                </div>
+            </form>
+        </div>
+        <div>
+            <img src="img/Artboard 23.png" alt=""> Copyright © 2023
+        </div>
+    </footer>
+</body>
+<script src="scrip.js"></script>
+
+</html>
