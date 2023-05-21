@@ -1,0 +1,343 @@
+/*
+color: 
+#D0604C
+#F2E0D2
+#001425
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #001425;
+    color: #001425;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    grid-column: 1/ span 12;
+}
+
+.row {
+    display: grid;
+    margin: 5px;
+}
+
+nav {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: auto;
+    background-color: #D0604C;
+    text-align: center;
+}
+
+.logo {
+    width: 240px;
+    margin: 10px;
+}
+
+.nav-bar {
+    list-style-type: none;
+    text-align: right;
+    padding: 15px 5px;
+}
+
+.nav-item {
+    display: inline;
+}
+
+.nav-link {
+    color: #F2E0D2;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.nav-item .nav-link:hover {
+    background-color: #F2E0D2;
+    color: #001425;
+}
+
+#home {
+    text-align: center;
+}
+
+#home div {
+    text-align: center;
+    border-style: solid;
+    border-color: #D0604C;
+    margin: 5vh;
+    padding: 20vh 2vh;
+}
+
+#home p {
+    color: #F2E0D2;
+    margin: 5px 20px 20px 20px;
+}
+
+.logoHome {
+    max-width: 100%;
+    width: 75%;
+    margin: 5px;
+}
+
+.btn {
+    border: solid 2px #D0604C;
+    border-radius: 5px;
+    padding: 10px;
+    color: #F2E0D2;
+    background-color: #D0604C;
+    text-decoration: none;
+}
+
+#aboutus {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "img1" "aboutbox1" "img2" "aboutbox2";
+}
+
+#aboutus .textbox h1 {
+    border-bottom: solid #D0604C;
+}
+
+#aboutus .textbox p {
+    margin: 20px;
+}
+
+.img1 {
+    grid-area: img1;
+    width: 100%;
+}
+
+.img2 {
+    grid-area: img2;
+    width: 100%;
+    background-color: #F2E0D2;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.img2 img {
+    height: 30vh;
+    margin-top: 5vh;
+}
+
+.textbox {
+    padding: 5vh;
+    background-color: #F2E0D2;
+    text-align: center;
+}
+
+.textabout {
+    grid-area: aboutbox1;
+    margin: 0;
+}
+
+.textcto {
+    grid-area: aboutbox2;
+    margin-top: 0;
+}
+
+#staff {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    margin: 5vh;
+    text-align: center;
+}
+
+#staff img {
+    width: 100%;
+    border-bottom: solid #D0604C;
+}
+
+#staff p {
+    color: #001425;
+}
+
+#staff b {
+    color: #D0604C;
+}
+
+#staff a {
+    color: #141C37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#staff a:hover {
+    color: #D0604C;
+    background-color: #141C37;
+}
+
+#staff .staffph {
+    width: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+#booking {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: auto;
+    background-color: #F2E0D2;
+    text-align: center;
+}
+
+#booking div img {
+    grid-area: imgbg;
+    width: 100%;
+}
+
+#booking div form {
+    grid-area: formbg;
+    padding: 5vh 10vh;
+    background-color: #001425;
+}
+
+.boxbkg {
+    display: flex;
+    justify-content: space-between;
+}
+
+#booking form h1 {
+    color: #D0604C;
+}
+
+form div {
+    margin: 10px;
+    color: #F2E0D2;
+}
+
+form input {
+    width: 200px;
+}
+
+.btn-con {
+    margin: 3vh;
+}
+
+footer {
+    display: grid;
+    height: 65vh;
+    max-width: 100%;
+    grid-template-columns: auto;
+    background-color: #D0604C;
+    text-align: center;
+    color: #F2E0D2;
+    padding: 5vh;
+}
+
+footer p {
+    margin: 5vh;
+}
+
+footer .socialbox {
+    margin-bottom: 5vh;
+}
+
+footer img {
+    width: 50px;
+}
+
+footer .btn {
+    background-color: #141C37;
+}
+
+@media (min-width:720px) {
+    nav {
+        grid-template-columns: auto auto;
+        text-align: left;
+    }
+    header .logoHome {
+        width: 50%;
+        margin: 5px;
+    }
+    #aboutus {
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: auto;
+        grid-template-areas: "img1 aboutbox1 aboutbox1" "aboutbox2 aboutbox2 img2";
+    }
+    .img1 {
+        grid-area: img1;
+        height: 30vh;
+        margin: 0 0 0 5vh;
+    }
+    .img2 {
+        grid-area: img2;
+        height: 30vh;
+        margin: 5vh 5vh 0 0;
+        background-color: #001425;
+        text-align: left;
+    }
+    .img2 img {
+        height: 30vh;
+        margin-top: 0;
+    }
+    .textcto {
+        grid-area: aboutbox2;
+        height: 20vh;
+        margin-top: 5vh;
+    }
+    .container .row-3 {
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+    }
+    .container .row-2 {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+    #staff {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        margin-top: 0 5vh;
+        text-align: center;
+    }
+    #staff img {
+        width: 520px;
+        border-bottom: solid #D0604C;
+        text-align: center;
+    }
+    #booking {
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: "imgbg formbg formbg";
+        background-color: #F2E0D2;
+        text-align: center;
+    }
+    #booking div img {
+        grid-area: imgbg;
+        margin: 2vh 0;
+        height: 40vh;
+    }
+    #booking div form {
+        grid-area: formbg;
+        height: 30vh;
+        margin: 2vh 0;
+        background-color: #001425;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: "social social msg ";
+        height: 37vh;
+    }
+    footer img {
+        width: 100px;
+    }
+    footer .social {
+        grid-area: social;
+    }
+    footer .msg {
+        grid-area: msg;
+    }
+}
